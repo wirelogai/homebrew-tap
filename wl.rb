@@ -5,20 +5,20 @@
 class Wl < Formula
   desc "WireLog CLI — headless analytics for agents and LLMs"
   homepage "https://wirelog.ai"
-  version "0.6.0"
+  version "0.7.0"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/wirelogai/wirelog-cli/releases/download/v0.6.0/wl_0.6.0_darwin_amd64.tar.gz"
-      sha256 "c940c3c30892745a3d026e39fd06566ac7febc943542a65b527b55e8725d0748"
+      url "https://github.com/wirelogai/wirelog-cli/releases/download/v0.7.0/wl_0.7.0_darwin_amd64.tar.gz"
+      sha256 "af68a8e10c6935eed26ab9e94eb8202fd5248e7d57c24b34edf23b1e02baccde"
 
       define_method(:install) do
         bin.install "wl"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/wirelogai/wirelog-cli/releases/download/v0.6.0/wl_0.6.0_darwin_arm64.tar.gz"
-      sha256 "3a16ed3591a1d3ac006a2a2d7233ae0905aa4c0fe39ff9a256938af9f6f078f1"
+      url "https://github.com/wirelogai/wirelog-cli/releases/download/v0.7.0/wl_0.7.0_darwin_arm64.tar.gz"
+      sha256 "52aa228cce7a0b61d827be96e828449a7a041b86d6823b2e71e06573781c7b95"
 
       define_method(:install) do
         bin.install "wl"
@@ -28,15 +28,15 @@ class Wl < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/wirelogai/wirelog-cli/releases/download/v0.6.0/wl_0.6.0_linux_amd64.tar.gz"
-      sha256 "9b6b401f26e38d2635556e10d986ee9be498e23df131d6c0662affdc8b951404"
+      url "https://github.com/wirelogai/wirelog-cli/releases/download/v0.7.0/wl_0.7.0_linux_amd64.tar.gz"
+      sha256 "497775f852adab6beaee5e16ce69a4c85c5cedaeb55bcfbea815f864836b96bc"
       define_method(:install) do
         bin.install "wl"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/wirelogai/wirelog-cli/releases/download/v0.6.0/wl_0.6.0_linux_arm64.tar.gz"
-      sha256 "d9f52bf1f06da9755697bd44d7f954a0088ebd39d2a77d40525316fea090b11f"
+      url "https://github.com/wirelogai/wirelog-cli/releases/download/v0.7.0/wl_0.7.0_linux_arm64.tar.gz"
+      sha256 "bb391f24b1d38b9c27039ebeec2f0f84b9dd2c9b41beacb2793037ed9da49f6b"
       define_method(:install) do
         bin.install "wl"
       end
